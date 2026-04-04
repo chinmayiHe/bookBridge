@@ -1,5 +1,6 @@
 package com.example.bookBridge.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,5 +15,7 @@ public class User {
 
     private String name;
     private String email;
+
+    @JsonIgnore
     private String password;
 }
